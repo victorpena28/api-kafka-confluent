@@ -41,7 +41,7 @@ except Exception as e:
 # Crear tabla si no existe en PostgreSQL
 try:
     cursor.execute("""
-    CREATE TABLE IF NOT EXISTS transactions (
+    CREATE TABLE IF NOT EXISTS transactions_victor_pena (
         id SERIAL PRIMARY KEY,
         transaction_json JSONB,
         logistic_regression_fraud REAL,
